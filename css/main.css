@@ -470,3 +470,71 @@ font-family: var(--raleway);
     font-family:var(--raleway);
 }
 
+/*===============================================
+        Work / Portfolio Page
+=================================================*/
+/* portfoli tab control nav  */
+.portfolio .tab-controll{}
+.portfolio .tab-controll .portfolio-nav {
+    margin-left: auto;
+    width: fit-content;
+}
+.portfolio .tab-controll .portfolio-nav ul{
+    margin: 10px 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.portfolio .tab-controll .portfolio-nav ul li{
+   
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
+}
+.portfolio .tab-controll .portfolio-nav ul li a{
+    font-size: 16px;
+    font-family: var(--poppins);
+    text-decoration: none;
+    color: #57657A;
+    margin-left: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.portfolio .tab-controll .portfolio-nav ul li a:hover{
+    color: #000;
+}
+.portfolio .tab-controll .portfolio-nav ul li a.active{
+    color: #FA5252;
+}
+/* portfoli post area  */
+.portfolio .portfolio-post {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #FFE3BF;
+    width: 350px;
+    margin: 12px;
+    border-radius: 8px;
+}
+.portfolio .portfolio-post .thumbnail{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+.portfolio .portfolio-post .thumbnail img{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+.portfolio .portfolio-post .details span{
+    font-family: var(--poppins);
+    font-size: 12px;
+    color: #1A1003;
+}
+.portfolio .portfolio-post .details h3{
+    font-family: var(--poppins);
+    margin: 5px 0;
+    font-size: 16px;
+    color: #000;
+}
