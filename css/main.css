@@ -1,0 +1,472 @@
+/*================================================
+* Google Fonts Import
+=================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
+
+/*================================================
+* COMMON CSS
+=================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #F2F5F9;
+    --black: #000000;
+    --raleway:'Raleway', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*================================================
+* Header Area CSS
+=================================================*/
+
+/* header-top style  */
+#header_area .header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 104px;
+    margin-top: 18px;
+}
+
+#header_area .header-top .logo {
+    font-size: 24px;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+#header_area .header-top .night-mode {
+    padding: 20px 0;
+}
+
+#header_area .header-top .logo a {
+    text-decoration: none;
+}
+
+#header_area .header-top .logo .part1 {
+    color: var(--black);
+}
+
+#header_area .header-top .logo .part2 {
+    background: -webkit-linear-gradient(#FF9C1A, #EC1B09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header_area .header-top .night-mode a {
+    display: inline-block;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px gray;
+    background-color: #EBF2FA;
+    text-align: center;
+    line-height: 56px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+/* Header-bottom style  */
+#header_area .header-bottom {
+    
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+#header_area .header-bottom #nav {
+    box-shadow: 0 0 2px gray;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+}
+
+#header_area .header-bottom ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+#header_area .header-bottom ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+#header_area .header-bottom ul li a {
+    text-align: center;
+    padding-top: 25%;
+    color: var(--black);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #E1E8EF;
+    transition: 0.5s;
+
+}
+
+#header_area .header-bottom ul li a i {
+    
+    width: 100%;
+    text-align: center;
+}
+
+#header_area .header-bottom ul li a:hover {
+    transform: scale(1.2);
+    background-color: inherit;
+    background-image: linear-gradient(#FF9C1A, #EC1B09);
+    color: #fff;
+
+}
+
+#header_area .header-bottom ul li a:active {
+    background-color: inherit;
+    background-image: linear-gradient(#FF9C1A, #EC1B09);
+    color: #fff;
+}
+#header_area .header-bottom ul li a.active{
+    background-color: inherit;
+    background-image: linear-gradient(#FF9C1A, #EC1B09);
+    color: #fff;
+}
+/*================================================
+* Body Area  CSS style
+=================================================*/
+#body_area .main-area{
+    display: flex;
+    /* border: 1px solid rgb(116, 98, 98); */
+    justify-content: space-between;
+}
+#body_area #profile_area {
+    font-family: var(--raleway);
+    flex-basis: 30%;
+    height: auto;
+    margin: 5px  5px 5px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    max-height: 680px;
+}
+#body_area  #content_area {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 5px 0 5px 5px;
+    flex-basis: 68%;
+}
+#profile_area .container{
+    margin-top: -100px;
+}
+
+/*================================================
+* profile_area CSS
+=================================================*/
+
+
+#profile_area .pic,#profile_area .name,#profile_area .social,#profile_area .details{
+    margin: 0 auto;
+}
+/* profile pic  */
+#profile_area .pic {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 2px gray;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+#profile_area .pic img {
+    width: -webkit-fill-available;
+    height: auto;
+    transform: scale(1.2);
+    text-align: center;
+}
+/* name area  */
+#profile_area .name{
+    margin-top: 10px;
+    width: 100%;
+}
+#profile_area .name h1{
+    font-size: 32px;
+text-align: center;
+font-family: var(--raleway);
+}
+#profile_area .name h5{
+    text-align: center;
+    font-family: var(--raleway);
+    font-weight: 300;
+    font-size: 15px;
+
+}
+/* Social  */
+#profile_area .social{
+    margin-top: 20px;
+}
+
+#profile_area .social ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#profile_area .social ul li {
+    margin: 0 2px;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 8.27px;
+    background-color: #F2F7FC;
+    
+}
+#profile_area .social ul li a {
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    transition: 0.5s;
+}
+#profile_area .social ul li a:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px rgb(40, 240, 0);
+    background-color: inherit;
+    background-image: linear-gradient(#FF9C1A, #EC1B09);
+    color: #fff;
+}
+/* details area  */
+#profile_area .details {
+    background-color: var(--body-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 20px;
+}
+#profile_area .details .divider{
+    width: 80%;
+    height: 1px;
+    background-color: #E3E3E3;
+    margin: 15px 0;
+}
+#profile_area .details .box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#profile_area .details .inline{
+    /* display: inline-block; */
+}
+#profile_area .details p {
+    margin: 0;
+    padding: 0;
+}
+#profile_area .details .icon {
+    text-align: center;
+    font-size: 25px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+}
+#profile_area .details .icon i {
+    background: -webkit-linear-gradient(#FF9C1A, #EC1B09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#profile_area .details .info p:nth-child(1) {
+    color: gray;
+    text-transform: capitalize;
+}
+#profile_area .details .info p:nth-child(2) a{
+    color: var(--black);
+    /* text-transform: capitalize; */
+    text-decoration: none;
+    font-weight: 500;
+}
+#profile_area .details .box4 {
+    text-align: center;
+}
+#profile_area .details .box4 a {
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 10px 20px;
+    /* box-shadow: 0 0 5px rgb(40, 240, 0); */
+    background-color: inherit;
+    background-image: linear-gradient(#FF9C1A, #EC1B09);
+    color: #fff;
+    border-radius: 20px;
+}
+/*================================================
+* content_area CSS
+=================================================*/
+#content_area {
+    padding: 15px 40px;
+}
+#content_area .page_title h1 {
+    font-size: 40px;
+    margin: 15px 0;
+    font-family: 'popins', 'sans-serif';
+    font-weight: 800;
+    object-fit: contain;
+    position: relative;
+}
+#content_area h2 {
+    margin: 15px 0;
+    font-family: 'popins', 'sans-serif';
+    font-weight: 800;
+    object-fit: contain;
+    position: relative;
+    
+}
+/* Description style  */
+
+.description h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+.page_title h1::after {
+    position: absolute;
+    content: " ";
+    width: 300px;
+    height: 2px;
+    margin-left: 15px;
+    bottom: 21px;
+    background-image: linear-gradient(#FF9C1A, #EC1B09);
+}
+.description P {
+   font-family: var(--raleway);
+   font-size: 16px;
+}
+ /* service area style  */
+ .service .main-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.service .main-box .child-box {
+    padding: 5px 20px;
+    width: 305px;
+    margin-right: 10px;
+    border-radius: 20px;
+    
+    
+}
+.service .main-box .child-box:nth-child(3n+1){
+    background-color: #FFEBD1;
+}
+/* .service .main-box .child-box:nth-child(2n-0){
+    background-color: var(--body-bg-color);
+} */
+.service .main-box .child-box:nth-of-type(3n+2), .service .main-box .child-box:nth-of-type(3n+2) + * {
+    background-color: var(--body-bg-color);
+}
+.service .main-box .child-box .icon {
+    margin-right: 10px;
+}
+.service .main-box .child-box h1 {
+    font-family: var(--poppins);
+    font-size: 18px;
+}
+.service .main-box .child-box h3 {
+    font-size: 18px;
+}
+.service .main-box .child-box p {
+    font-size: 14px;
+    
+    
+}
+/*=============================================
+ Resume Page css style
+ ==============================================*/
+ /* Education or experience area style  */
+.ex-edu-content{}
+.ex-edu-content .education .title, .ex-edu-content .experience .title{
+    font-size: 27.74px;
+    font-family: var(--poppins);
+}
+.ex-edu-content .education .title .icon, .ex-edu-content .experience .title .icon{
+    margin-right: 10px;
+    background: -webkit-linear-gradient(#FF9C1A, #EC1B09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ex-edu-content .education .details, .ex-edu-content .experience .details {
+    margin-top: 15px;
+    /* background-color: #FFE3BF; */
+    border-radius: 9.25px;
+    width: 100%;
+    padding: 15px;
+    font-size: 13.87px;
+    font-family: var(--raleway);
+}
+.ex-edu-content .education .details:nth-child(odd){
+    background-color: #FFEED9;
+}
+.ex-edu-content .education .details:nth-child(even){
+    background-color: #FFE3BF;
+}
+.ex-edu-content .experience .details:nth-child(even){
+    background-color: #FFEED9;
+}
+.ex-edu-content .experience .details:nth-child(odd){
+    background-color: #FFE3BF;
+
+}
+.ex-edu-content .education .details span,
+.ex-edu-content .experience .details span
+{
+    margin: 10px 0;
+    font-weight: 100;
+}
+.ex-edu-content .education .details h3, .ex-edu-content .experience .details h3{
+    margin: 10px 0;
+   font-weight: 700;
+   font-size: 13.87px;
+}
+.ex-edu-content .education .details p, 
+.ex-edu-content .experience .details p{
+    margin: 10px 0;
+   font-weight: 500;
+   font-size: 13.87px;
+}
+/* skills section area style  */
+.skills .work-skills .skills-tag, .skills .soft-skills .skills-tag {
+    text-decoration: none;
+    color: #000;
+    padding: 6px 10px;
+    background-color: #ddd;
+    margin: 3px 8px;
+    font-size: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    font-family:var(--raleway);
+}
+
