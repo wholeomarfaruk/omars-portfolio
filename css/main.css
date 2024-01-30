@@ -383,9 +383,7 @@ font-family: var(--raleway);
 .service .main-box .child-box:nth-child(3n+1){
     background-color: #FFEBD1;
 }
-/* .service .main-box .child-box:nth-child(2n-0){
-    background-color: var(--body-bg-color);
-} */
+
 .service .main-box .child-box:nth-of-type(3n+2), .service .main-box .child-box:nth-of-type(3n+2) + * {
     background-color: var(--body-bg-color);
 }
@@ -539,17 +537,28 @@ font-family: var(--raleway);
     font-size: 16px;
     color: #000;
 }
+.portfolio .portfolio-post:nth-child(odd){
+    background-color: #FFE3BF;
+}
+.portfolio .portfolio-post:nth-child(even){
+    background-color: #FFEED9;
+}
+
+
 /*====================================
  Contact Page 
  =====================================*/
- .contact_info .phone,  .contact_info .email{
+ .contact_info .phone, .contact_info .email {
     border-radius: 20px;
-    width: 333px;
+    max-width: 333px;
     height: 150px;
     padding: 15px;
- }
+    min-width: 100%;
+    width: 100%;
+}
  .contact_info .phone{
     background-color: #FFEED9;
+ 
 
  }
  .contact_info .email{
