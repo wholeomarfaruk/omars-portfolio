@@ -31,6 +31,7 @@ body {
 .wrapper {
     width: 85%;
     margin: 0 auto;
+    max-width: 1440px;
 }
 
 /*================================================
@@ -538,3 +539,88 @@ font-family: var(--raleway);
     font-size: 16px;
     color: #000;
 }
+/*====================================
+ Contact Page 
+ =====================================*/
+ .contact_info .phone,  .contact_info .email{
+    border-radius: 20px;
+    width: 333px;
+    height: 150px;
+    padding: 15px;
+ }
+ .contact_info .phone{
+    background-color: #FFEED9;
+
+ }
+ .contact_info .email{
+    background-color: #F2F7FC;
+ }
+ .contact_info .phone .icon, .contact_info .email .icon {
+    font-size: 24px;
+    width: fit-content;
+    margin-left: auto;
+    background: -webkit-linear-gradient(#FF9C1A, #EC1B09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact_info .phone .details p,  .contact_info .email .details p{
+    margin: 0;
+    line-height: 22px;
+}
+ .contact_info .phone .details{}
+ .contact_info .phone .details h5{}
+
+
+
+
+ .contact_info .email .details{}
+ .contact_info .email .details h5{}
+ .contact_info .email .details p{}
+
+ /* contact form  */
+ .contact_form{
+    padding: 10px;
+    margin-top: 30px;
+ }
+ .contact_form .contact_form_content{
+    width: 95%;
+    height: auto;
+ }
+ .contact_form .contact_form_content p{
+    font-family: var(--raleway);
+    font-size: 16px;
+ }
+ .contact_form .contact_form_content .form-area .input-group{
+    margin-top: 15px;
+    width: 100%;
+ }
+ .contact_form .contact_form_content .form-area .input-group input{
+    width: 100%;
+    font-family: var(--raleway);
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #B5B5B5;
+    padding: 8px 5px;
+ }
+ .contact_form .contact_form_content .form-area .input-group input:focus-visible{
+    outline: none;
+    transition: 0.5s;
+    border-bottom:2px solid #FA5252;
+
+ }
+ .contact_form .contact_form_content .form-area .input-group input::placeholder{
+    font-weight: 700;
+    color: #000;
+ }
+ .contact_form .contact_form_content .form-area .input-group input[type=submit]{
+    width: auto;
+   font-weight: 700;
+    font-family: var(--raleway);
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #FA5252;
+    background-color: transparent;
+    /* display: inline-block; */
+ }
